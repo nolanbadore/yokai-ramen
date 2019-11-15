@@ -1,0 +1,21 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    overflow: hidden;
+
+}
+
+header {
+	grid-column: 1 / span 12;
+	grid-row: 1 / span 6;
+	img {
+		width: 100vw;
+	}
+}
+
+main {
+  background:#eeeeee;
+  background: linear-gradient(to left bottom, #eeeeee 50%, #ffffff 50%);
+}
+
