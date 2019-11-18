@@ -67,17 +67,55 @@
 	background: linear-gradient(to bottom, #eeeeee 0%, #ffffff 100%);
 
 	h2 {
+		grid-row: 1;
 		grid-column: 2 / span 5;
 		font-size: 3rem;
 		margin: -2rem 0 0 4rem;
 	}
 	p {
+		grid-row: 1;
 		grid-column: 2 / span 5;
-		margin: -4.5rem 0 0 4rem;
+		margin: 2rem 0 0 4rem;
 		font-size: 2rem;
 	}
 
-	img {
+	figure {
 		grid-column: 8 / span 4;
+		margin-top: -10rem;
+		img {
+			height: 500px;
+		}
+	}
+}
+
+.purchase {
+	margin-top: -90rem;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.purchase {
+	h2 {
+		grid-row: 1;
+		grid-column: 5 / span 2;
+	}
+
+	p {
+		grid-row: 1;
+		grid-column: 7 / span 2;
+		font-size: 1.75rem;
+	}
+
+	img {
+		grid-row: 2 / span 4;
+		grid-column: 1 / span 12;
+		margin: auto;
+		padding-top: 1rem;
+	}
+
+	button {
+		grid-row: 6;
+		grid-column: 6 / span 2;
 	}
 }
