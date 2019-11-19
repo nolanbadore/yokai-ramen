@@ -19,3 +19,13 @@ main {
   background: linear-gradient(to left bottom, #eeeeee 50%, #ffffff 50%);
 }
 
+nav {
+	img {
+		position:fixed;
+		left:0;
+		top:0;
+    	height:80px;
+    	padding: 2rem;
+    	z-index: 100;
+	}
+}

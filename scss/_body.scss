@@ -61,10 +61,10 @@
 
 .reimagined {
 	width: 100%;
-	grid-column: 1 / span 12;
+	grid-column: 1 / span 6;
 	grid-row: 1 / span 6;
 	background:#eeeeee;
-	background: linear-gradient(to bottom, #eeeeee 0%, #ffffff 100%);
+	background: linear-gradient(to bottom, #eeeeee 0%, #ffffff 40%);
 
 	h2 {
 		grid-row: 1;
@@ -89,7 +89,7 @@
 }
 
 .purchase {
-	margin-top: -90rem;
+	margin-top: -100rem;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -117,5 +117,139 @@
 	button {
 		grid-row: 6;
 		grid-column: 6 / span 2;
+	}
+}
+
+.red-ramen {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.red-ramen {
+	img {
+		grid-column: 1 / span 12;
+		grid-row: 1 / span 3;
+		z-index: 1;
+		width: 100%;
+	}
+
+	h2 {
+		grid-column: 2 / span 7;
+		grid-row: 3;
+		z-index: 2;
+		color: #fff;
+		font-size: 3rem;
+	}
+
+	p {
+		grid-column: 2 / span 7;
+		grid-row: 3;
+		z-index: 2;
+		color: #fff;
+		font-size: 2rem;
+		padding: 5rem 0 0 0;
+	}
+}
+
+.faq {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    overflow: hidden;
+    background:#eeeeee;
+	background: linear-gradient(155deg, #eeeeee 50%, #ffffff 50%);
+}
+
+.faq {
+	padding: 6rem 0 6rem 0;
+	img {
+		grid-row: 1 / span 3;
+		grid-column: 3 / span 12;
+		z-index: 1;
+		width: 120%;
+		transform: scaleX(-1);
+	}
+	.one {
+		grid-column: 2 / span 3;
+		grid-row: 1 / span 1;
+		z-index: 2;
+		h2 {
+			margin-bottom: .5rem;
+			font-size: 3rem;
+		}
+		p {
+			margin: 0;
+			font-size: 1.5rem;
+		}
+	}
+	.two {
+		grid-column: 2 / span 3;
+		grid-row: 2 / span 1;
+		z-index: 2;
+		h2 {
+			margin-bottom: .5rem;
+			font-size: 3rem;
+		}
+		p {
+			margin: 0;
+			font-size: 1.5rem;
+		}
+	}
+	.three {
+		grid-column: 2 / span 3;
+		grid-row: 3 / span 1;
+		z-index: 2;
+		h2 {
+			margin-bottom: .5rem;
+			font-size: 3rem;
+		}
+		p {
+			margin: 0;
+			font-size: 1.5rem;
+		}
+	}
+
+}
+
+footer {
+	display: grid;
+	grid-template-columns: 2fr 3fr 1fr 1fr 1fr 2fr;
+}
+
+footer {
+	background-color: #eeeeee;
+	height: 350px;
+	margin-top: 5rem;
+	width: 100%;
+
+	.button {
+		grid-column: 2 / span 1;
+		margin: auto;
+	}
+
+	.tw {
+		grid-column: 3 / span 1;
+		margin: auto;
+		height: 100px;
+	}
+
+	.fb {
+		grid-column: 4 / span 1;
+		margin: auto;
+		height: 100px;
+	}
+
+	.ig {
+		grid-column: 5 / span 1;
+		margin: auto;
+		height: 100px;
+	}
+
+	.icon:hover {
+		transition: all 0.15s;
+		cursor: pointer;
+		-webkit-filter: drop-shadow(4px 4px #B12525);
+  		filter: drop-shadow(4px 4px #B12525);
 	}
 }
